@@ -1,0 +1,169 @@
+@media screen and (min-width: 360px) {
+	.hero {
+		display: flex;
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		object-position: center;
+		min-height: 300px;
+		align-items: center;
+		background: url(/images/hero-image_4_small.jpg);
+		background-color: #427659;
+		background-position: center;
+	}
+
+	.hero-title {
+		color: #fff;
+		font-weight: 500;
+		font-size: 44px;
+		text-align: center;
+		text-decoration-line: underline;
+	}
+
+	.hero-tagline {
+		color: #fff;
+		margin-top: 16px;
+		font-size: 20px;
+		font-weight: 300;
+		text-align: center;
+		display: block;
+	}
+
+	.app-bar .app-bar__navigation ul li a {
+		display: inline-block;
+		margin: 0;
+		min-width: 44px;
+		min-height: 44px;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.hero {
+		display: flex;
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		object-position: center;
+		min-height: 300px;
+		align-items: center;
+		background: url(/images/hero-image_4_small.jpg);
+		background-color: #427659;
+		background-position: center;
+	}
+
+	.app-bar {
+		grid-template-columns: 1fr auto;
+		padding: 8px 32px;
+	}
+
+	.app-bar .logo h1 {
+		font-size: 1.5em;
+	}
+
+	.app-bar .app-bar__menu {
+		display: none;
+	}
+
+	.app-bar .app-bar__navigation {
+		position: static;
+		width: 100%;
+	}
+
+	.app-bar .app-bar__navigation ul li {
+		display: inline-block;
+	}
+
+	.app-bar .app-bar__navigation ul li a {
+		display: inline-block;
+		width: 120px;
+		text-align: center;
+		margin: 0;
+	}
+
+	.hero-title {
+		color: #fff;
+		font-weight: 500;
+		font-size: 70px;
+		text-align: center;
+		text-decoration-line: underline;
+	}
+
+	.hero-tagline {
+		color: #fff;
+		margin-top: 16px;
+		font-size: 25px;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.restaurants {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.restaurant {
+		grid-template-columns: auto 1fr; 
+	}
+
+	.restaurant .restaurant__title {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
+	.restaurant .restaurant__desc {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.app-bar .logo h1 {
+		font-size: 2em;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.hero {
+		display: flex;
+		width: 100%;
+		height: 270px;
+		object-fit: cover;
+		object-position: center;
+		min-height: 380px;
+		align-items: center;
+		background: url(/images/hero-image_4_large.jpg);
+		background-color: #427659;
+		background-position: center;
+	}
+	
+	.hero-title {
+		color: #fff;
+		font-weight: 500;
+		font-size: 70px;
+		text-align: center;
+		text-decoration-line: underline;
+	}
+
+	.hero-tagline {
+		color: #fff;
+		margin-top: 16px;
+		font-size: 25px;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.restaurants {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.restaurants {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.restaurants {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
